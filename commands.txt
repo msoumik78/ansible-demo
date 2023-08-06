@@ -1,0 +1,8 @@
+How to run the playbook locally (which means on local system) :
+============================================================================
+ansible-playbook --connection=local --inventory 127.0.0.1, playbook-01.yml
+Also can run the command as below (since playbook already contains hosts header):
+ansible-playbook playbook-02.yml
+
+
+

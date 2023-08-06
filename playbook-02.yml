@@ -1,0 +1,12 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+  vars:
+    - create_user_file: yes
+    - user: msoumik
+  tasks:
+    - name: create file for user
+      file:
+        path: /Users/{{ user }}/ansible1
+        state: touch
+      when: create_user_file
